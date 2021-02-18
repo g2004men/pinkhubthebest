@@ -1,0 +1,284 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local mainf = Instance.new("Frame")
+local name = Instance.new("TextLabel")
+local TPfurnace = Instance.new("TextButton")
+local TPberry = Instance.new("TextButton")
+local TPres = Instance.new("TextButton")
+local TPdiamond = Instance.new("TextButton")
+local TPsaphire = Instance.new("TextButton")
+local TPmetal = Instance.new("TextButton")
+local TTPruby = Instance.new("TextButton")
+local TPbaranium = Instance.new("TextButton")
+local TPstone = Instance.new("TextButton")
+local TPcopper = Instance.new("TextButton")
+local TPsilver = Instance.new("TextButton")
+local TPairD = Instance.new("TextButton")
+local TPbtree = Instance.new("TextButton")
+local TPstree = Instance.new("TextButton")
+local TPsuit = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
+local hitboxextender = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+mainf.Name = "mainf"
+mainf.Parent = ScreenGui
+mainf.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+mainf.Position = UDim2.new(0.0840597749, 0, 0.18427518, 0)
+mainf.Size = UDim2.new(0, 300, 0, 475)
+mainf.Selectable = true
+mainf.Active = true
+mainf.Draggable = true
+
+name.Name = "name"
+name.Parent = mainf
+name.BackgroundColor3 = Color3.fromRGB(99, 99, 99)
+name.BorderSizePixel = 0
+name.Size = UDim2.new(0, 300, 0, 23)
+name.Font = Enum.Font.SourceSans
+name.Text = "island-2 fuxkrr"
+name.TextColor3 = Color3.fromRGB(0, 0, 0)
+name.TextSize = 14.000
+
+TPfurnace.Name = "TPfurnace"
+TPfurnace.Parent = mainf
+TPfurnace.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPfurnace.Position = UDim2.new(0.536666691, 0, 0.366315782, 0)
+TPfurnace.Size = UDim2.new(0, 133, 0, 21)
+TPfurnace.Font = Enum.Font.SourceSans
+TPfurnace.Text = "furnace"
+TPfurnace.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPfurnace.TextSize = 14.000
+TPfurnace.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Structures.Furnace.Part.CFrame+ Vector3.new(0, 10, 0)
+end)
+
+TPberry.Name = "TPberry"
+TPberry.Parent = mainf
+TPberry.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPberry.Position = UDim2.new(0.536666632, 0, 0.30105263, 0)
+TPberry.Size = UDim2.new(0, 133, 0, 21)
+TPberry.Font = Enum.Font.SourceSans
+TPberry.Text = "berry bush"
+TPberry.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPberry.TextSize = 14.000
+TPberry.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Berry3.Part.CFrame+ Vector3.new(0, 10, 0)
+end)
+
+TPres.Name = "TPres"
+TPres.Parent = mainf
+TPres.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPres.Position = UDim2.new(0.536666691, 0, 0.237894744, 0)
+TPres.Size = UDim2.new(0, 133, 0, 21)
+TPres.Font = Enum.Font.SourceSans
+TPres.Text = "not working atm"
+TPres.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPres.TextSize = 14.000
+
+TPdiamond.Name = "TPdiamond"
+TPdiamond.Parent = mainf
+TPdiamond.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPdiamond.Position = UDim2.new(0.0199999996, 0, 0.684210539, 0)
+TPdiamond.Size = UDim2.new(0, 133, 0, 21)
+TPdiamond.Font = Enum.Font.SourceSans
+TPdiamond.Text = "Diamond ore"
+TPdiamond.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPdiamond.TextSize = 14.000
+TPdiamond.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ores.DiamondOre.Main.CFrame+ Vector3.new(0, 10, 0)
+end)
+
+TPsaphire.Name = "TPsaphire"
+TPsaphire.Parent = mainf
+TPsaphire.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPsaphire.Position = UDim2.new(0.0199999996, 0, 0.623157918, 0)
+TPsaphire.Size = UDim2.new(0, 133, 0, 21)
+TPsaphire.Font = Enum.Font.SourceSans
+TPsaphire.Text = "saphire ore"
+TPsaphire.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPsaphire.TextSize = 14.000
+TPsaphire.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ores.SaphireOre.Main.CFrame+ Vector3.new(0, 10, 0)
+end)
+
+TPmetal.Name = "TPmetal"
+TPmetal.Parent = mainf
+TPmetal.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPmetal.Position = UDim2.new(0.0199999996, 0, 0.557894766, 0)
+TPmetal.Size = UDim2.new(0, 133, 0, 21)
+TPmetal.Font = Enum.Font.SourceSans
+TPmetal.Text = "metal ore"
+TPmetal.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPmetal.TextSize = 14.000
+TPmetal.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ores.SaphireOre.Main.CFrame+ Vector3.new(0, 10, 0)
+end)
+
+TTPruby.Name = "TTPruby"
+TTPruby.Parent = mainf
+TTPruby.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TTPruby.Position = UDim2.new(0.0199999996, 0, 0.49473685, 0)
+TTPruby.Size = UDim2.new(0, 133, 0, 21)
+TTPruby.Font = Enum.Font.SourceSans
+TTPruby.Text = "ruby ore"
+TTPruby.TextColor3 = Color3.fromRGB(0, 0, 0)
+TTPruby.TextSize = 14.000
+TTPruby.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ores.RubyOre.Main.CFrame+ Vector3.new(0, 10, 0)
+end)
+
+TPbaranium.Name = "TPbaranium"
+TPbaranium.Parent = mainf
+TPbaranium.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPbaranium.Position = UDim2.new(0.0199999996, 0, 0.43368423, 0)
+TPbaranium.Size = UDim2.new(0, 133, 0, 21)
+TPbaranium.Font = Enum.Font.SourceSans
+TPbaranium.Text = "baranium ore"
+TPbaranium.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPbaranium.TextSize = 14.000
+TPbaranium.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ores.BaraniumOre.Main.CFrame+ Vector3.new(0, 10, 0)
+end)
+
+TPstone.Name = "TPstone"
+TPstone.Parent = mainf
+TPstone.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPstone.Position = UDim2.new(0.0199999996, 0, 0.366315782, 0)
+TPstone.Size = UDim2.new(0, 133, 0, 21)
+TPstone.Font = Enum.Font.SourceSans
+TPstone.Text = "stone ore"
+TPstone.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPstone.TextSize = 14.000
+TPstone.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ores.StoneOre.Main.CFrame+ Vector3.new(0, 10, 0)
+end)
+
+TPcopper.Name = "TPcopper"
+TPcopper.Parent = mainf
+TPcopper.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPcopper.Position = UDim2.new(0.0199999996, 0, 0.30105263, 0)
+TPcopper.Size = UDim2.new(0, 133, 0, 21)
+TPcopper.Font = Enum.Font.SourceSans
+TPcopper.Text = "copper ore"
+TPcopper.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPcopper.TextSize = 14.000
+TPcopper.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ores.CopperOre.Main.CFrame+ Vector3.new(0, 10, 0)
+end)
+
+TPsilver.Name = "TPsilver"
+TPsilver.Parent = mainf
+TPsilver.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPsilver.Position = UDim2.new(0.0199999996, 0, 0.237894744, 0)
+TPsilver.Size = UDim2.new(0, 133, 0, 21)
+TPsilver.Font = Enum.Font.SourceSans
+TPsilver.Text = "silver ore"
+TPsilver.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPsilver.TextSize = 14.000
+TPsilver.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ores.SilverOre.Main.CFrame+ Vector3.new(10, 0, 0)
+end)
+
+TPairD.Name = "TPairD"
+TPairD.Parent = mainf
+TPairD.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPairD.Position = UDim2.new(0.536666691, 0, 0.170526326, 0)
+TPairD.Size = UDim2.new(0, 133, 0, 21)
+TPairD.Font = Enum.Font.SourceSans
+TPairD.Text = "airdrop"
+TPairD.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPairD.TextSize = 14.000
+TPairD.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").LootPlane.Part.CFrame+ Vector3.new(0, 10, 0)
+end)
+
+TPbtree.Name = "TPbtree"
+TPbtree.Parent = mainf
+TPbtree.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPbtree.Position = UDim2.new(0.0199999996, 0, 0.170526326, 0)
+TPbtree.Size = UDim2.new(0, 133, 0, 21)
+TPbtree.Font = Enum.Font.SourceSans
+TPbtree.Text = "big tree"
+TPbtree.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPbtree.TextSize = 14.000
+TPbtree.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Trees.Tree2.HumanoidRootPart.CFrame+ Vector3.new(10, 10, 0)
+end)
+
+TPstree.Name = "TPstree"
+TPstree.Parent = mainf
+TPstree.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPstree.Position = UDim2.new(0.0199999996, 0, 0.105263159, 0)
+TPstree.Size = UDim2.new(0, 133, 0, 21)
+TPstree.Font = Enum.Font.SourceSans
+TPstree.Text = "small tree"
+TPstree.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPstree.TextSize = 14.000
+TPstree.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Trees.Tree1.HumanoidRootPart.CFrame+ Vector3.new(10, 10, 0)
+end)
+
+TPsuit.Name = "TPsuit"
+TPsuit.Parent = mainf
+TPsuit.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TPsuit.Position = UDim2.new(0.536666691, 0, 0.105263159, 0)
+TPsuit.Size = UDim2.new(0, 133, 0, 21)
+TPsuit.Font = Enum.Font.SourceSans
+TPsuit.Text = "suitcase"
+TPsuit.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPsuit.TextSize = 14.000
+TPsuit.MouseButton1Click:connect(function()
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Assets.Suitcase.Part.CFrame+ Vector3.new(0, 10, 0)
+end)
+
+ESP.Name = "ESP"
+ESP.Parent = mainf
+ESP.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+ESP.Position = UDim2.new(0.536666691, 0, 0.4336842, 0)
+ESP.Size = UDim2.new(0, 133, 0, 21)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextSize = 14.000
+ESP.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua" ,true))()
+end)
+
+hitboxextender.Name = "hitbox extender"
+hitboxextender.Parent = mainf
+hitboxextender.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+hitboxextender.Position = UDim2.new(0.536666691, 0, 0.49473682, 0)
+hitboxextender.Size = UDim2.new(0, 133, 0, 21)
+hitboxextender.Font = Enum.Font.SourceSans
+hitboxextender.Text = "hitbox extender"
+hitboxextender.TextColor3 = Color3.fromRGB(0, 0, 0)
+hitboxextender.TextSize = 14.000
+hitboxextender.MouseButton1Click:connect(function()
+	_G.HeadSize = 20
+	_G.Disabled = true
+
+	game:GetService('RunService').RenderStepped:connect(function()
+		if _G.Disabled then
+			for i,v in next, game:GetService('Players'):GetPlayers() do
+				if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+					pcall(function()
+						v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+						v.Character.HumanoidRootPart.Transparency = 0.7
+						v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+						v.Character.HumanoidRootPart.Material = "Neon"
+						v.Character.HumanoidRootPart.CanCollide = false
+					end)
+				end
+			end
+		end
+	end)
+end)
